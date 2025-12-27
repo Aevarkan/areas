@@ -1,0 +1,10 @@
+{
+  "name": "@workspace/addon",
+  "version": "0.0.0",
+  "private": true,
+  "license": "GPL-3.0-only",
+  "author": "Aevarkan",
+  "dependencies": {
+    "@minecraft/server": "2.5.0-beta.1.21.131-stable"
+  }
+}

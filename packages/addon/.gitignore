@@ -1,0 +1,13 @@
+# Ignore EVERYTHING
+*
+
+# directories
+!src
+!src/**
+!assets
+!assets/**
+
+# files
+!package.json
+!LICENSE
+!.gitignore
