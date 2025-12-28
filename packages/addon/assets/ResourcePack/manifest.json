@@ -1,0 +1,33 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "pack.name",
+    "description": "pack.description",
+    "min_engine_version": [
+      1,
+      21,
+      131
+    ],
+    "uuid": "d522a0b5-1b9a-4389-964c-659b8dd42f46",
+    "version": "0.1.0"
+  },
+  "metadata": {
+    "authors": ["Aevarkan"],
+    "license": "GPL-3.0-only",
+    "product_type": "addon",
+    "url": "https://github.com/Aevarkan/areas"
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "uuid": "d4019725-a826-4098-a7fb-307b59114837",
+      "version": "0.1.0"
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "60d9b499-73e6-4f74-a280-16a51c232330",
+      "version": "0.1.0"
+    }
+  ]
+}

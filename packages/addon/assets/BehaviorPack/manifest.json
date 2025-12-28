@@ -1,0 +1,44 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "pack.name",
+    "description": "pack.description",
+    "min_engine_version": [
+      1,
+      21,
+      131
+    ],
+    "uuid": "60d9b499-73e6-4f74-a280-16a51c232330",
+    "version": "0.1.0"
+  },
+  "metadata": {
+    "authors": ["Aevarkan"],
+    "license": "GPL-3.0-only",
+    "product_type": "addon",
+    "url": "https://github.com/Aevarkan/areas"
+  },
+  "modules": [
+    {
+      "type": "script",
+      "uuid": "ee4c8570-de7a-4d5b-9702-ecc2f5132937",
+      "version": "0.1.0",
+      "language": "javascript",
+      "entry": "scripts/main.js"
+    },
+    {
+      "type": "data",
+      "uuid": "26c2dcb8-2f74-416f-b70d-1a61cb0d1095",
+      "version": "0.1.0"
+    }
+  ],
+  "dependencies": [
+    {
+      "module_name": "@minecraft/server",
+      "version": "beta"
+    },
+    {
+      "uuid": "d522a0b5-1b9a-4389-964c-659b8dd42f46",
+      "version": "0.1.0"
+    }
+  ]
+}
