@@ -27,3 +27,20 @@ export function compressNumber(number: number): string {
   const stringNumber = (isNegativeNumber ? "-" : "") + compressedNumber
   return stringNumber
 }
+
+/**
+ * Decompresses a base64 number.
+ * @param stringNumber The compressed number as a string.
+ * @returns The decompressed number.
+ */
+export function decompressNumber(stringNumber: string): number {
+  let number = 0
+  const isNegative = stringNumber.startsWith("-");
+  const base64Digits = isNegative ? stringNumber.slice(1) : stringNumber
+
+  for (const char of base64Digits) {
+    number = number * 64 + BASE64.indexOf(char)
+  }
+
+  return isNegative ? -number : number
+}
