@@ -5,6 +5,7 @@
   "license": "GPL-3.0-only",
   "author": "Aevarkan",
   "dependencies": {
-    "@minecraft/server": "^2.4.0"
+    "@minecraft/server": "^2.4.0",
+    "@workspace/common": "workspace:*"
   }
 }

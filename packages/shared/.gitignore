@@ -1,0 +1,11 @@
+# Ignore EVERYTHING
+*
+
+# directories
+!src
+!src/**
+
+# files
+!tsconfig.json
+!package.json
+!.gitignore

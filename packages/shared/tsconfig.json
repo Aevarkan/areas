@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "declaration": true,
+    "declarationMap": true,
+    "outDir": "dist",
+    "module": "es2022",
+    "target": "es2022",
+    "moduleResolution": "bundler",
+    "verbatimModuleSyntax": true,
+    "stripInternal": true,
+    "composite": true
+  },
+  "include": [
+    "src/**/*.ts"
+  ]
+}

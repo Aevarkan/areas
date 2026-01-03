@@ -11,6 +11,9 @@ importers:
       '@minecraft/server':
         specifier: ^2.4.0
         version: 2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.131)
+      '@workspace/common':
+        specifier: workspace:*
+        version: link:packages/common
 
   packages/addon:
     dependencies:
@@ -21,6 +24,12 @@ importers:
   packages/common: {}
 
   packages/database: {}
+
+  packages/shared:
+    dependencies:
+      '@workspace/common':
+        specifier: workspace:*
+        version: link:../common
 
 packages:
 
