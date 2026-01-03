@@ -18,6 +18,7 @@
     "build": "tsc --build tsconfig.json"
   },
   "dependencies": {
+    "@minecraft/vanilla-data": "*",
     "@workspace/common": "workspace:*"
   }
 }
