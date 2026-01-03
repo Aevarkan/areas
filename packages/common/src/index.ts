@@ -2,3 +2,4 @@
 // Licensed under the GPLv3 license
 
 export * from "./interactions"
+export * from "./types"
