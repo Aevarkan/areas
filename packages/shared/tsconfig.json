@@ -9,7 +9,8 @@
     "moduleResolution": "bundler",
     "verbatimModuleSyntax": true,
     "stripInternal": true,
-    "composite": true
+    "composite": true,
+    "rootDir": "src"
   },
   "include": [
     "src/**/*.ts"
