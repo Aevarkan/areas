@@ -1,7 +1,7 @@
 // Copyright (c) 2025 Aevarkan
 // Licensed under the GPLv3 license
 
-import type { DimensionLocation } from "@minecraft/server"
+import type { ExactLocation } from "./types"
 
 export type AreasEvent = InventoryEvent | EntityEvent | BlockEvent | FullBlockEvent
 export type AreasEventActor = PlayerEventActor | BlockEventActor | EntityEventActor | WorldEventActor | NoneEventActor
@@ -18,7 +18,7 @@ interface EntityEventActor {
 
 interface BlockEventActor {
   type: AreasEventActorType.Block,
-  blockLocation: DimensionLocation
+  blockLocation: ExactLocation
 }
 
 interface WorldEventActor {
@@ -68,7 +68,7 @@ export interface InventoryEvent extends BaseEvent {
 export interface EntityEvent extends BaseEvent {
   type: InteractionTypes.Entity,
   interaction: EntityInteraction,
-  location: DimensionLocation,
+  location: ExactLocation,
   target: PlayerEventActor | EntityEventActor
   source: AreasEventActor
 }
@@ -76,7 +76,7 @@ export interface EntityEvent extends BaseEvent {
 export interface BlockEvent extends BaseEvent {
   type: InteractionTypes.Block,
   interaction: BlockInteraction
-  location: DimensionLocation,
+  location: ExactLocation,
   blockTypeId: string
   source: AreasEventActor
 }
@@ -84,7 +84,7 @@ export interface BlockEvent extends BaseEvent {
 export interface FullBlockEvent extends BaseEvent {
   type: InteractionTypes.FullBlock,
   interaction: BlockInteraction,
-  location: DimensionLocation,
+  location: ExactLocation,
   beforeBlockTypeId: string,
   afterBlockTypeId: string
   source: AreasEventActor
